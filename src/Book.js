@@ -25,12 +25,12 @@ const Book = () => {
 		try {
 			var response = '';
 			if (button === 'add') {
-				response = await fetch('http://172.16.2.195:8080/nextgen_v1/api/insert_book', {
+				response = await fetch('http://elnidoleatherback.com/nu/nextgen_v1/api/insert_book', {
 					method: 'POST',
 					body: formData,
 				});
 			} else if (button === 'getlist') {
-				response = await fetch('http://172.16.2.195:8080/nextgen_v1/api/get_all_books', {
+				response = await fetch('http://elnidoleatherback.com/nu/get_all_books', {
 					method: 'GET',
 					body: formData,
 				});
@@ -54,7 +54,7 @@ const Book = () => {
 		}
 	};
 
-	return (
+		return (
 
 
 
@@ -125,7 +125,7 @@ const Book = () => {
 						// required
 						/>
 					</div>
-					<button type="submit" htmlFor="getlist" onClick={(e) => setButton('login')}>Get List</button>
+					{/* <button type="submit" htmlFor="getlist" onClick={(e) => setButton('login')}>Get List</button> */}
 					<button type="submit" htmlFor="add" onClick={(e) => setButton('add')}>Add Book</button>
 
 

@@ -4,6 +4,7 @@ import HomePage from './HomePage';
 import BookList from './BookList.js';
 import Book from './Book';
 import ChangeData from './ChangeData.js';
+import ChangeDesc from './ChangeDesc.js';
 
 
 
@@ -31,6 +32,9 @@ function App() {
 				</Routes>
 				<Routes>
 					<Route exact path='/changedata' element={<ChangeData />} />
+				</Routes>
+				<Routes>
+					<Route exact path='/changedesc' element={<ChangeDesc />} />
 				</Routes>
 
 			</div>

@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
  
-const BASE_URL = 'http://172.16.2.195:8080/nextgen_v1/api';
+// const BASE_URL = 'http://172.16.2.195:8080/nextgen_v1/api';
  
 const BookList = () => {
   const [books, setBooks] = useState([]);
@@ -11,7 +11,7 @@ const BookList = () => {
   useEffect(() => {
     const fetchBooks = async () => {
       try {
-        const response = await axios.get(`${BASE_URL}/get_all_books`);
+        const response = await axios.get(`http://elnidoleatherback.com/nu/nextgen_v1/api/get_all_books`);
         if (response.data.status === 'SUCCESS') {
           setBooks(response.data.result);
         } else {
